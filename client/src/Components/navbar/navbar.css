@@ -1,0 +1,106 @@
+
+/*-------------- navBar */
+
+
+.navbar{
+    width: 100vw;
+    
+    height: 5rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    
+    top: 0;
+    z-index: 3;
+}
+
+.navbarLogo{
+    height: 3rem;
+    width: 11rem;
+    margin-right: 4rem;
+}
+
+.navbarUl span{
+    margin: 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    
+}
+
+.navbarUl span:hover{
+    font-weight: 600;
+}
+
+.navbarUl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+/*----------MENU LOGO*/
+#checkbox {
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(176, 92, 255);
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
