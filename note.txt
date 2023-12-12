@@ -1,0 +1,6 @@
+create react project (vit) :npm create vite@latest
+							npm install
+
+create server (express) :
+							npm init -y
+							npm i mongoose express cors nodemon
